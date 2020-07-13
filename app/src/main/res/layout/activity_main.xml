@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="16dp"
+        android:padding="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="false">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/photoImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/layoutPre"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Take Photo"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/goLive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Go Live"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/galleryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:text="Select Photo"
+            android:textAllCaps="false"
+            android:background="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutPre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btnPredict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_gradient"
+            android:text="Predict"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</RelativeLayout>
