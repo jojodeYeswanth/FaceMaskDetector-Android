@@ -7,6 +7,6 @@ The objective of this project is to train a deep convolutional neural network on
 
  [Download APK from here ⚡️](https://appsenjoy.com/download/6005af135089344eaa1120460d41e060.html)
 
-# Outcomes
+# Model Outcomes
 ![NoMask](https://i.ibb.co/6ggLwms/Screenshot-145.png)
 ![Mask](https://i.ibb.co/H7mj1Qt/Screenshot-146.png)
